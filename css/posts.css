@@ -1,0 +1,123 @@
+.wealcome-section {
+    width: 100vw;
+    height: 40vh;
+    /* 标题文本居中 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wealcome-section>h1 {
+    /* 大标题 */
+    top: 20vh;
+    width: 100vw;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+#cas {
+    height: 40%;
+}
+
+/* 主要列表 */
+
+.main-tips {
+    /* 主要布局 */
+    width: max(80%, 800px);
+    margin: auto;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 1fr;
+    align-items: start;
+    /* grid-column-gap: 16px; */
+}
+
+.leftside {
+    top: 40px;
+    position: sticky;
+}
+
+.usr_msg {
+    /* 个人信息 */
+    grid-row: 1;
+    height: auto;
+    top: 40px;
+    /* text-align: center; */
+    background-color: #A294F9;
+    /* animation: tip-movein-left 1s ease; */
+}
+
+.usr_name_photo {
+    display: flex;
+    align-items: center;
+}
+
+.usr_photo {
+    /* 头像 */
+    margin: 10px;
+    width: 80px;
+    height: 80px;
+    text-align: left;
+    display: inline;
+    flex-shrink: 0;
+    border-radius: 50%;
+}
+
+.usr_name>p {
+    display: inline;
+}
+
+.usr_name>h3 {
+    text-align: left;
+}
+
+.journal {
+    top: 240px;
+    height: 400px;
+    /* position: sticky; */
+    overflow: auto;
+    background-color: #a6a6a6;
+    /* animation: tip-movein-right 1s; */
+}
+
+.posts {
+    /* 文章列表 */
+    display: flex;
+    flex-direction: column;
+}
+
+.post-tip {
+    height: 225px;
+    /* margin-bottom: 16px; */
+    border-bottom-width: 1px;
+    display: flex;
+    align-items: center;
+    background-color: #CDC1FF;
+    /* animation: tip-movein-right 1s; */
+}
+
+.post_img {
+    /* 配图 */
+    width: min(35%, 300px);
+    /* 宽度占比 */
+    height: 100%;
+}
+
+img.post_img {
+    width: 100%;
+    /* border-radius: 8px 0 0 8px;圆角 */
+}
+
+.post_info {
+    flex-grow: 1;
+    /* 有问题改为width */
+    /* width: 65%; */
+    padding: 0 20px;
+    display: block;
+}
+
+.post_title {
+    /* 文章标题 */
+    text-align: left;
+    font-size: 1.72em;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<script src="/static/js/marked.min.js"></script>
+
+<head>
+    <title>{{.Title}}</title>
+</head>
+
+<body>
+    <link rel="stylesheet" type="text/css" href="/static/css/basic.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/post.css">
+    <div class="topnav">
+        <ul class="topnav-ul">
+            <li style="float: left"><a href="/">zhou</a></li>
+            <li>3</li>
+            <li><a href="/sayings">随记</a></li>
+            <li><a href="/post">文章</a></li>
+        </ul>
+    </div>
+
+    <div class="headline">
+        <canvas id="cas"></canvas>
+        <h1>{{.Title}}</h1>
+        <p>{{.Message}}</p>
+    </div>
+
+    <div class="main">
+        <div class="editor-detail">
+            <p>作者: {{.Editor}}</p>
+            <p>发布时间: {{.UplodeTime}}</p>
+        </div>
+        <div id="main-content">
+            <p>正在加载...</p>
+        </div>
+        <div class="sidebar">
+            <div class="contents">
+                
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const articlePath = "{{.ArticlePath}}";
+        fetch(articlePath)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('网络错误: ' + response.status);
+                }
+                return response.text();
+            })
+            .then(text => {
+                document.getElementById('main-content').innerHTML = marked.parse(text);
+            })
+            .catch(error => {
+                console.error('加载失败:', error);
+                document.getElementById('main-content').innerHTML = '加载失败: ' + error.message;
+            });
+    </script>
+
+    <div class="footer">
+        <p>12345678</p>
+    </div>
+</body>
+
+</html>

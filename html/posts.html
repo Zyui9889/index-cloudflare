@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="/static/css/animations.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/basic.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/posts.css">
+    <script type="text/javascript" src="/static/js/js.js" defer></script>
+    <title>{{.Version}}</title>
+</head>
+
+<body>
+    <div class="topnav">
+        <ul class="topnav-ul">
+            <li style="float: left"><a href="/">zhou</a></li>
+            <li>3</li>
+            <li><a href="/sayings">随记</a></li>
+            <li><a href="/post">文章</a></li>
+        </ul>
+    </div>
+
+
+    <div class="wealcome-section">
+        <canvas id="cas"></canvas>
+        <h1>blogs</h1>
+    </div>
+
+
+    <div class="main">
+        <div class="main-tips">
+            <div class="leftside">
+                <div class="usr_msg">
+                    <div class="usr_name_photo">
+                        <img class="usr_photo" src="/static/img/1532681846.png" alt="usr_photo">
+                        <div class="usr_name">
+                            <h3>Zhou</h3>
+                            <p>abcdefghijklmn</p>
+                            <p>qyuetdguhaj</p>
+                        </div>
+                    </div>
+                    <p>qwertyuiopdsfjh</p>
+                </div>
+                <hr>
+                <div class="journal">
+                    <h2>日志</h2>
+                    <p>2024/11/30 v0.1.1</p>
+                    <p>成立blog页,做出大体雏形</p>
+                    <p>2024/12/7 v0.1.2</p>
+                    <p>添加新背景图片,优化菜单栏代码,添加部分动效,优化内容排布结构</p>
+                    <p>2024/12/19 v0.1.3</p>
+                    <p>优化css选择器性能，修改class标签，使用grid布局</p>
+                    <p>2024/12/20 v0.1.4</p>
+                    <p>添加阴影，优化grid布局，添加新行</p>
+                    <p>2024/12/21 v0.1.5</p>
+                    <p>修复动效问题</p>
+                    <p>2025/1/1 v0.1.6</p>
+                    <p>新年快乐！添加动效，修改元素间隔（更好看了），实现personaltip的定位，添加脚注</p>
+                    <p>2025/1/21 v0.1.7</p>
+                    <p>调整配色，建立文章tip样式，优化布局，增加图片位</p>
+                    <p>2025/1/28 v0.1.8</p>
+                    <p>文章添加flex布局，修改文章标题布局，修改css代码排布位置</p>
+                    <p>2025/2/7 v0.1.9</p>
+                    <p>文章标题完成，修复放大比例问题，修改部分class名,active-tips使用grid</p>
+                    <p>2025/2/12 v0.1.10</p>
+                    <p>又修改一遍css，实现模块化功能</p>
+                    <p>2025/8/1 v0.1.11</p>
+                    <p>半年没动过了，重新修改了设计，需要找时间重构一下，要减少无用代码和css文件，修改class名方便理解，做好移植到服务器的准备</p>
+                    <p>2025/8/3 v0.1.12</p>
+                    <p>简单修改了头像显示样式</p>
+                    <p>2025/10/2 v0.2.1</p>
+                    <p>成功添加了go服务后端，可以独立运行了</p>
+                    <p>2025/10/6 v0.2.2</p>
+                    <p>继续修改页面，解决leftside定位问题</p>
+                    <p>2025/10/18 v0.2.3</p>
+                    <p>完善超链接使用</p>
+                    <p>2025/12/19 v0.2.4</p>
+                    <p>小修改，没什么变动</p>
+                    <p>2025/12/29 v0.2.5</p>
+                    <p>添加动态headline，重命名class名 artical —> post</p>
+                    <p>下一步添加高考倒计时和分离出个人介绍页与blog页，</p>
+                    <p>添加以文件夹为索引的文件系统（文件夹打包一篇blog所有内容，运行时通过文件夹名建立索引）</p>
+                    <p>2025/12/31 v0.2.6</p>
+                    <p>给main.go加了互斥锁和模板重载功能，写了下readme</p>
+                    <p>2026/1/1 v0.2.7</p>
+                    <p>新年快乐！重构了网站使用逻辑</p>
+                    <p>2026/2/9 v0.2.8</p>
+                    <p>完成文章页的内容显示，需要进一步优化显示</p>
+                    <p>2026/2/13 v0.2.9</p>
+                    <p>添加了倒计时功能，改了点配色，加了点注释</p>
+                    <p>2026/2/20 v0.2.10</p>
+                    <p>加了一点post.html样式</p>
+                    <p>2026/6/14 v0.2.11</p>
+                    <p>优化了样式，html页面放static里了，把md渲染js下载到本地，下一步制作main页面介绍和脚注</p>
+                    <p>2026/7/23 v0.2.12</p>
+                    <p>没想到一个多月没碰了，完成了随记页面的大纲，下一步是做好后端，准备好上线应该有的流量控制</p>
+                    <p>2026/7/24 v0.2.13</p>
+                    <p>添加了文章的缓存机制</p>
+                </div>
+            </div>
+            <div class="posts">
+
+                <div class="post-tip tip">
+                    <div class="post_img">
+                        <a href="/Posts/2026-1-2.html">
+                            <img class="post_img" src="/static/img/background-by-lowpoly.png">
+                        </a>
+                    </div>
+                    <div class="post_info">
+                        <a class="post_title" href="/Posts/2026-1-2.html">{{.Title}}</a>
+                    </div>
+                </div>
+                <hr>
+
+                {{range .List}}
+                <div class="post-tip tip">
+                    <div class="post_img">
+                        <a href="{{.RequestUrl}}">
+                            <img class="post_img" src="/static/img/background-by-lowpoly.png">
+                        </a>
+                    </div>
+                    <div class="post_info">
+                        <a class="post_title" href="{{.RequestUrl}}">{{.Title}}</a>
+                                <p>{{.Editor}} {{.UplodeTime}} {{.UplodeNo}}</p>
+                                <p>{{.Message}}</p>
+                    </div>
+                </div>
+                <hr>
+                {{end}}
+
+
+
+
+
+                <div class="post-tip tip">
+                </div>
+                <hr>
+                <div class="post-tip tip">
+                </div>
+                <hr>
+                <div class="post-tip tip">
+                </div>
+                <hr>
+                <div class="post-tip tip">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+        <p>12345678</p>
+    </div>
+</body>
+
+</html>
