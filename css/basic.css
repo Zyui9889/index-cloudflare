@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li {
+    text-align: center;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    /* wealcome-section
+        main 
+       footer */
+    background-size: 100vw 100vh;
+    font-family: Menlo, Monaco, 'Courier New', monospace;
+    /* background-image: url(/img/background-by-lowpoly.png); */
+    background-color: #dad1e9;
+    /* background-color: #bbff0f; */
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+/* 以上为初始化 */
+
+/* 菜单栏 */
+.topnav{
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.topnav-ul {
+    list-style-type: none;
+    height: 40px;
+    width: 100vw;
+    background-color: #A294F9;
+}
+
+.topnav-ul>li {
+    width: 40px;
+    height: 20px;
+    padding: 10px 30px;
+    float: right;
+    display: block;
+    transition: background-color 0.1s ease-in;
+}
+
+.topnav-ul>li:hover {
+    background-color: #664fff;
+}
+
+
+/* 固定模版主题内容 */
+
+/* 欢迎页面 */
+
+.wealcome-section {
+    grid-row: 1;
+}
+
+.wealcome-section>h1 {
+    /* 大标题 */
+    top: 45vh;
+    width: 100vw;
+    position: absolute;
+}
+#cas {
+    /* 背景动画画布 */
+    /* 使用动画js.js */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* 主体 */
+
+.main {
+    grid-row: 2;
+}
+
+.tip {
+    /* border-radius: 8px; */
+    transition: all 0.3s ease;
+    /* position: relative; */
+}
+
+
+.tip:hover {
+    background-color: #a294f9;
+    transform: translateY(-4px);
+    box-shadow: 0px 2px 8px 0;
+}
+
+/* 脚注 */
+
+.footer {
+    grid-row: 3;
+    height: 200px;
+    margin-top: 40px;
+    background-color: #6c63d2;
+}

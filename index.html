@@ -1,11 +1,72 @@
-<html>
-    <head>
-        <title>Hello world!</title>
-    </head>
-    <body>
-        <h1>yui</h1>
-        <h2>测试</h2>
-        <p>这里很快就有一些东西了</p>
-        <p>新建文字测试</p>
-    </body>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="/css/animations.css">
+    <link rel="stylesheet" type="text/css" href="/css/basic.css">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <script type="text/javascript" src="/js/js.js" defer></script>
+    <script type="text/javascript" src="/js/daojishi.js" defer></script>
+    <title>{{.Version}}</title>
+</head>
+
+<body>
+    <div class="topnav">
+        <ul class="topnav-ul">
+            <li style="float: left"><a href="/">YUI</a></li>
+            <li>3</li>
+            <li><a href="/sayings">随记</a></li>
+            <li><a href="/post">文章</a></li>
+        </ul>
+    </div>
+
+
+    <div class="wealcome-section">
+        <canvas id="cas"></canvas>
+        <h1>The first site</h1>
+        <img class="wave-arror" src="static/img/wave_arrow down.svg" alt="arrow">
+    </div>
+
+
+    <div class="main">
+        <div class="active-tip">
+            <h2>笔记</h2>
+            <p>目前状态：呜呼！高考结束</p>
+            <p>现在已经闲到不知道干嘛了</p>
+            <p>趁现在有功夫赶紧完成网站</p>
+            <p>现在是真想让他赶紧上线</p>
+            <p>规划：日记区，有心情就发自己的感受</p>
+            <p>规划：文章区，分享自己的想法和经验</p>
+            <p>规划：后端完善流量机制</p>
+        </div>
+
+        <div class="time-count-down">
+            <p >距离高考还有:</p>
+            <div class="time-count">
+                <p>
+                <span class="count-down" id="days">00</span>天
+                <span class="count-down" id="hours">00</span>小时
+                <span class="count-down" id="minutes">00</span>分
+                <span class="count-down" id="seconds">00</span>秒
+                </p>
+            </div>
+            <div class="progress-bar">
+                <div id="progress-fill"></div>
+            </div>
+            <p style="text-align: right;" id="progress-percent">00</p>
+        </div>
+        <div class="about-me">
+            <h2>yui的小站，欢迎随时看看</h2>
+            <h3>About me</h3>
+            <p>我叫yui，准大一学生</p>
+            <p>喜欢编程，喜欢前端，喜欢设计，喜欢一切美好的事物</p>
+            <p>这是我的第一个个人站点，虽然现在还很简陋，但我会不断完善它的，希望你们喜欢</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>12345678</p>
+    </div>
+</body>
+
 </html>

@@ -1,0 +1,89 @@
+.wealcome-section{
+    width: 100vw;
+    height: 100vh;
+    /* 标题文本居中 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wave-arror {
+    top: 90vh;
+    width: 100%;
+    height: 10vh;
+    position: absolute;
+    animation: arror-slow-wave 0.5s ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+/* 上栏 */
+
+.active-tips>div {
+    height: 200px;
+    overflow: auto;
+}
+
+.active-tip {
+    background-color: #A294F9;
+    /* animation: tip-movein-left 1s; */
+}
+
+/* main */
+.main>div{
+    padding: 32px;
+}
+
+/* 倒计时 */
+.time{
+    background-color: #4237c4;
+}
+
+.time-count-down>p{
+    margin-left: 16px;
+    font-size: large;
+}
+
+.time-count>p{
+    margin-left: 40px;
+    /* 文本居中 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.count-down{
+    font-size: xx-large;
+}
+
+.progress-bar{
+    width: 100%;
+    height: 8px;
+    margin-top: 16px;
+    background-color: aliceblue;
+}
+
+#progress-fill{
+    height: 8px;
+    font-size: xx-small;
+}
+
+/* 个人介绍 */
+.about-me>h2{
+    font-size: xx-large;
+    margin-top: 16px;
+    /* margin-left: 64px; */
+    text-align: center;
+}
+
+.about-me>h3{
+    font-size: x-large;
+    margin-top: 16px;
+    margin-left: 64px;
+    text-align: left;
+}
+
+.about-me>p{
+    margin-left: 32px;
+    margin-top: 32px;
+    text-align: left;
+}
