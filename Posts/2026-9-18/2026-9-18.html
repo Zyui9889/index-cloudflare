@@ -2,15 +2,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
 
 <head>
-    <script src="/static/js/marked.min.js"></script>
+    <script src="/js/marked.min.js"></script>
 
 
     <title>山里沟军训结束</title>
 </head>
 
 <body>
-    <link rel="stylesheet" type="text/css" href="/static/css/basic.css">
-    <link rel="stylesheet" type="text/css" href="/static/css/post.css">
+    <link rel="stylesheet" type="text/css" href="/css/basic.css">
+    <link rel="stylesheet" type="text/css" href="/css/post.css">
     <div class="topnav">
         <ul class="topnav-ul">
             <li style="float: left"><a href="/">zhou</a></li>
@@ -34,10 +34,10 @@
         <div id="main-content">
             <p>又不知道写什么了 orz
                 18号上午闭营仪式结束，喊了好几声教官都没理我拍照，追着拍才拍上还把我脸拍的老大一个</p>
-            <p><img src="/Posts/image/2026-9-18%E5%86%9B%E8%AE%AD%E7%BB%93%E6%9D%9F/IMG_0307.jpeg" alt="把我拍的很丑的照片"></p>
+            <p><img src="/Posts/2026-9-18/IMG_03067.jpeg" alt="把我拍的很丑的照片"></p>
             <p>这么一说我们教官感觉挺gay的，训练时经常抱着跟路灯转跟跳钢管舞似的，抓着人相当亲密恨不得直接贴上去（实际上真贴上去了），然而有人说他“只馋不买”竟然没懂
                 他人还挺能摸鱼，没有上级来视察就做路沿石看手机</p>
-            <p><img src="/Posts/image/2026-9-18%E5%86%9B%E8%AE%AD%E7%BB%93%E6%9D%9F/IMG_0306.jpeg" alt="神秘对峙照片"></p>
+            <p><img src="/Posts/2026-9-18/IMG_0306.jpeg" alt="神秘对峙照片"></p>
             <p>军训也结束了，以后想见着他还不一定能见着，微信也没加，对我来说加了也不太可能聊天什么的～～说不定能做红娘呢感觉很合适～～</p>
             <p>这一篇也就算是大学的开始了，也是这个网站的开始</p>
         </div>
@@ -47,25 +47,6 @@
             </div>
         </div>
     </div>
-
-    <script>
-        const articlePath = "\/Posts\/md\/2026-9-18军训结束";
-        fetch(articlePath)
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('网络错误: ' + response.status);
-                }
-                return response.text();
-            })
-            .then(text => {
-                document.getElementById('main-content').innerHTML = marked.parse(text);
-            })
-            .catch(error => {
-                console.error('加载失败:', error);
-                document.getElementById('main-content').innerHTML = '加载失败: ' + error.message;
-            });
-    </script>
-
     <div class="footer">
         <p>12345678</p>
     </div>
